@@ -1,0 +1,29 @@
+.search-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.search-form input {
+  border-radius: 20px;
+  height: 40px;
+  width: 250px;
+  position: relative;
+  padding-left: 20px;
+}
+
+.search-form button {
+  position: absolute;
+  left: 823px;
+  border-radius: 20px;
+  background-color: #40e0d0;
+  height: 40px;
+  width: 70px;
+  transition: transform 0.2s;
+
+  &:hover,
+  &:focus {
+    transform: scale(1.05);
+  }
+}

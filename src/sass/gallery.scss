@@ -1,0 +1,60 @@
+.gallery {
+  position: relative;
+  top: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 10px;
+}
+
+.photo-card {
+  position: relative;
+  overflow: hidden;
+  margin: 10px;
+  width: auto;
+  flex-basis: calc(100% / 4 - 20px);
+  max-height: 230px;
+  border-radius: 7px;
+
+  transition: transform 0.2s;
+
+  &:hover,
+  &:focus {
+    transform: scale(1.05);
+  }
+}
+
+.photo-card__image {
+  height: 100%;
+}
+
+.info {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+
+  display: flex;
+  justify-content: space-around;
+  padding: 11px;
+
+  border-top: 3px solid rgba(49, 43, 43, 0.05);
+  border-radius: 10px 8px 0px 0px;
+}
+
+.info-item {
+  color: #ffffff;
+  font-size: 11px;
+  text-align: center;
+}
+
+.loader {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  margin-top: 120px;
+  margin-bottom: 20px px;
+}
+
+.hidden {
+  display: none;
+}
